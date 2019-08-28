@@ -1,0 +1,16 @@
+.top{
+	height: 42px;
+	background-color: #242527;
+}
+.header{
+	height: 74px;
+	background-color: red;
+}
+.main{
+	height: 4811px;
+	background-color: #ededed;
+}
+.footer{
+	height: 356px;
+	background-color: #fafafa;
+}
