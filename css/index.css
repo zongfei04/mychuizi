@@ -1,7 +1,62 @@
-.top{
-	height: 42px;
-	background-color: #242527;
-}
+/*top部分开始*/
+	.top{
+		height: 45px;
+		background-color: #242527;
+	}
+	/*top部分logo区域*/
+	.top .nav-logo a img{
+		float: left;
+		width: 18px;
+		height: 18px;
+		margin-left: 20px;
+		margin-top: 12px;
+	}
+	/*top部分中间区域*/
+	.top .top-list{
+		float: left;
+		margin-left: 540px;
+		line-height: 45px;
+	}
+	.top .top-list .top-item{
+		float: left;
+		margin-right: 38px;
+		opacity: 0.7;
+	}
+	.top .top-list .top-item:first-child{
+		opacity: 1;
+	}
+	.top .top-list .top-item:hover{
+		opacity: 0.9;
+	}
+	.top .top-list a{
+		font-size: 12px;
+		text-decoration: none;
+		color: #e5e5e5;
+		cursor: pointer;
+	}
+	/*个人中心*/
+	.top .top-user a img{
+		display: inline-block;
+		font-size: 16px;
+		float: right;
+		margin-right: 30px;
+		margin-top: 14px;
+		opacity: 1;
+	}
+	.top .top-user a img:hover{
+		opacity: 0.5;
+	}
+	/*购物中心*/
+	.top .top-shop a img{
+		float: right;
+		margin-right: 26px;
+		margin-top: 14px;
+		opacity: 1;
+	}
+	.top .top-shop a img:hover{
+		opacity: 0.7;
+	}
+/*top部分结束*/
 .header{
 	height: 74px;
 	background-color: red;
