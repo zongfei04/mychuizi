@@ -1,3 +1,67 @@
+/*公共样式*/
+
+.bd{
+	height:60px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #dbdbdb;
+	box-sizing: border-box;
+	line-height: 60px;
+}
+.bd .title{
+	float:left;
+	margin-left: 25px;
+	font-size: 18px;
+	font-weight: 900;
+	color: #000;
+}
+.bd .more{
+	float:right;
+	margin-right: 25px;
+}
+.bd .more span{
+	line-height: 24px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-left: 15px;
+}
+.bd .more span i{
+	margin-left: 5px;
+}
+.bd .more span:nth-child(1) i{
+	color:#d0d0d0;
+}
+.bd .more span:nth-child(2) i{
+	color: #7a7a7a;
+}
+
+/*热门下部*/
+.hd-list .hd-item{
+	width: 305px;
+	height:431px;
+	border-right: 1px solid #efefef;
+	box-sizing: border-box;
+	text-align: center
+}
+.hd-list .hd-item a{
+	text-decoration: none;
+}
+.hd-list .hd-item img{
+	margin-top: 70px;
+}
+.hd-list .hd-item a .price{
+	color:#e44b43;
+	margin-bottom: 52px;
+}
+.hd-list .hd-item a .name{
+	margin-top:42px;
+	font-size: 14px;
+}
+
+
+
 /*top部分开始*/
 	.top{
 		height: 45px;
@@ -95,7 +159,7 @@
 		position: relative;
 		width:330px;
 		height:36px;
-		border:1px solid;
+		border:1px solid #ebebeb;
 		border-radius: 20px;
 	}
 	.header .head-right input{
@@ -147,6 +211,62 @@
 .main{
 	height: 4811px;
 	background-color: #ededed;
+}
+/*轮播图*/
+	.main .carsouel{
+		position: relative;
+		width: 100%;
+		height: 548px;
+		background-color: #ededed;
+	}
+	.main .carsouel img{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 100%;
+		height: 498px;
+		border:1px solid #ccc;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+	/*轮播图中的三个下部按钮*/
+	.main .carsouel .btn-list{
+		position: absolute;
+		left:50%;
+		margin-left: -25px;
+		bottom: 45px;
+		/*width: 50px;
+		height: 20px;*/
+	}
+	.main .carsouel .btn-list li{
+		width: 10px;
+		height: 10px;
+		background-color: #a9a19e;
+		border-radius: 50%;
+		float: left;
+		border:1px solid #928a87;
+		box-sizing: border-box;
+		margin-left: 10px;
+	}
+	.main .carsouel .btn-list li:nth-child(2){
+		background-color: #fff;
+	}
+	.main .carsouel .btn-list li:hover{
+		background-color:#fff;
+	}
+/*热门商品*/
+.main .shopping{
+	width: 100%;
+	height:491px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+
+.main .shopping .hd-list{
+	height: 431px;
+	background-color: #fff;
 }
 .footer{
 	height: 356px;
