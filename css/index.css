@@ -38,26 +38,67 @@
 }
 
 /*热门下部*/
-.hd-list .hd-item{
-	width: 305px;
+/*.hd-list .hd-item{
+	float:left;
+	width:304px;
+	height:431px;
+	background-color: red;
+}*/
+.hd-item{
+	float:left;
+	width: 304px;
 	height:431px;
 	border-right: 1px solid #efefef;
 	box-sizing: border-box;
 	text-align: center
 }
-.hd-list .hd-item a{
+.hd-item a{
 	text-decoration: none;
 }
-.hd-list .hd-item img{
-	margin-top: 70px;
+.hd-item img{
+	margin-top: 50px;
 }
-.hd-list .hd-item a .price{
+.hd-item a .btn{
+	width: 70px;
+	height: 30px;
+	margin: 0 auto;
+}
+.hd-item a .btn li{
+	float: left;
+	width:14px;
+	height: 14px;
+	margin-top: 20px;
+	margin-left: 8px;
+	box-sizing: border-box;
+	border-radius: 50%;
+
+}
+.hd-item a .btn li:hover{
+	border:4px solid #b5b5b5;
+}
+.hd-item a .btn li:nth-child(1){
+	width: 12px;
+	height:12px;
+	background-color:#1c1c1c;
+	border:2px solid #b5b5b5;
+
+}
+.hd-item a .btn li:nth-child(2){
+	background-color:#142344;
+	border:1px solid #b5b5b5;
+}
+.hd-item a .btn li:nth-child(3){
+	background-color:#1c1c1c;
+	border:2px solid #b5b5b5;
+}
+.hd-item a .price{
 	color:#e44b43;
-	margin-bottom: 52px;
+	margin-top: 20px;
 }
-.hd-list .hd-item a .name{
-	margin-top:42px;
+.hd-item a .name{
+	margin-top:20px;
 	font-size: 14px;
+	color:#000;
 }
 
 
@@ -265,8 +306,19 @@
 
 
 .main .shopping .hd-list{
+	width:100%;
 	height: 431px;
 	background-color: #fff;
+}
+/*服饰专场*/
+.main .clothes{
+	width: 100%;
+	height:920px;
+	margin-top: 27px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
 }
 .footer{
 	height: 356px;
