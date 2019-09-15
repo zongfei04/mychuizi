@@ -172,7 +172,7 @@
 		opacity: 0.7;
 	}
 /*top部分结束*/
-/*header部分开始*/
+/*er部分开始*/
 	.header{
 		height: 74px;
 	}
@@ -258,6 +258,12 @@
 		font-size: 12px;
 		font-weight: bold;
 	}
+	/*搜索内容定位*/
+	/*.head-reach .search-list{
+		position: absolute;
+		top:36px;
+		left:0px;
+	}*/
 /*header部分结束*/
 .main{
 	/*height: 4811px;*/
