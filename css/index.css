@@ -100,6 +100,16 @@
 	font-size: 14px;
 	color:#000;
 }
+/*服装下部*/
+.hd-lis a img{
+	float:left;
+	width: 608px;
+	height:431px;
+	border-right: 1px solid #efefef;
+	box-sizing: border-box;
+	text-align: center
+
+}
 
 
 
@@ -250,7 +260,8 @@
 	}
 /*header部分结束*/
 .main{
-	height: 4811px;
+	/*height: 4811px;*/
+	padding-bottom: 27px;
 	background-color: #ededed;
 }
 /*轮播图*/
@@ -320,7 +331,121 @@
 	border-radius: 5px;
 	overflow: hidden;
 }
+.main .clothes .hd-list{
+	width:100%;
+	height:860px;
+	background-color: #fff;
+}
+/*服饰箱包*/
+.main .case{
+	width: 100%;
+	height:920px;
+	margin-top: 27px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.main .case .hd-list{
+	width:100%;
+	height:860px;
+	background-color: #fff;
+}
+/*精选官方配件*/
+.main .part{
+	width: 100%;
+	height:920px;
+	margin-top: 27px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.main .part .hd-list{
+	width:100%;
+	height:860px;
+	background-color: #fff;
+}
+/*畅呼吸系列产品*/
+.main .breath{
+	margin-top: 27px;
+	width: 100%;
+	height:491px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.main .breath .hd-list{
+	width:100%;
+	height: 431px;
+	background-color: #fff;
+}
+/*坚果手机及配件*/
+.main .phone{
+	width: 100%;
+	height:920px;
+	margin-top: 27px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.main .phone .hd-list{
+	width:100%;
+	height:860px;
+	background-color: #fff;
+}
+/*论坛精选*/
+.main .tribune{
+	width: 1226px;
+	height:370px;
+	margin-top: 27px;
+	border:2px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.main .tribune .tribune-list{
+	width:100%;
+	height:310px;
+	background-color: #fff;
+}
+.main .tribune .tribune-list li{
+	float:left;
+	width: 305px;
+	height:310px;
+	border-right: 1px solid #efefef;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+.main .tribune .tribune-list li a{
+	text-decoration: none;
+}
+.tribune .tribune-list li a img{
+	margin-top: 25px;
+	height: 138px;
+	width: 246px;
+
+}
+.tribune .tribune-list li a h5{
+	margin-top: 25px;
+	margin-bottom: 12px;
+	color:#333;
+	font-size: 14px;
+}
+.tribune .tribune-list li a p{
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 10px;
+}
+.tribune .tribune-list li a span{
+	font-size: 12px;
+	color:#5079d9;
+}
+/*最后的部分*/
 .footer{
+	border-top: 1px solid #e5e5e5;
 	height: 356px;
 	background-color: #fafafa;
 }
