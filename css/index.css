@@ -114,6 +114,7 @@
 
 /*top部分开始*/
 	.top{
+		position: relative;
 		height: 45px;
 		background-color: #242527;
 	}
@@ -169,6 +170,34 @@
 	}
 	.top .top-shop a img:hover{
 		opacity: 0.7;
+	}
+	/*购物中心下部*/
+	.top-shop .shop-bottom{
+		display: none;
+		position: absolute;
+		top: 47px;
+		right: 26px;
+		width: 360px;
+		height: 315px;
+		background-color: #fff;
+		border-radius: 5px;
+		border:1px solid #ccc;
+		box-sizing: border-box; 
+		z-index: 2;
+		text-align: center;
+	}
+	.top-shop .shop-bottom .log{
+		margin-top: 90px;
+	}
+	.top-shop .shop-bottom .name{
+		margin-top: 25px;
+		font-size: 18px;
+		color:#333;
+	}
+	.top-shop .shop-bottom .desc{
+		color: #bcbcbc;
+		font-size: 12px;
+		margin-top: 8px;
 	}
 /*top部分结束*/
 /*header部分开始*/
@@ -258,11 +287,29 @@
 		font-weight: bold;
 	}
 	/*搜索内容定位*/
-	/*.head-reach .search-list{
+	.header .head-right .search-list{
+		display: none;
 		position: absolute;
-		top:36px;
-		left:0px;
-	}*/
+		width: 310px;
+		height: 210px;
+		background-color: #fff;
+		border:1px solid #ccc;
+		z-index: 999;
+		margin-left: 10px;
+		margin-top: 15px;
+		border-radius: 5px;
+		box-sizing: border-box;
+
+	}
+	.header .head-right .search-list li{
+		margin-top: 18px;
+		margin-left: 15px;
+	}
+	.header .head-right .search-list a{
+		text-decoration: none;
+		font-size: 13px;
+		color:#666;
+	}
 /*header部分结束*/
 /*main部分开始*/
 	.main{
@@ -567,4 +614,4 @@
 		font-weight: 700;
 		color: #5070d9;
 	}
-/*footer部分结束*/
+/*footer部分结束
