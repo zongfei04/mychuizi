@@ -329,7 +329,7 @@
 		font-size: 13px;
 		color:#666;
 	}
-	/*首页下拉列表*/
+    /*首页下拉列表*/
 	.header .head-left-content {
 		display: none;
 		width: 100%;
@@ -351,8 +351,6 @@
 		color: #808080;
 		font-size: 12px;
 		margin-top: 30px;
-
-
 	}
 	.header .head-left-content .left-content-item a{
 		text-decoration: none;
@@ -363,6 +361,167 @@
 	.header .head-left-content .left-content-item a span{
 		vertical-align: 13px;
 		margin-left: 18px;
+	}
+	/*手机下拉列表*/
+	.header .head-left-content1{
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 74px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 2;
+		text-align: center;
+	}
+	.header .head-left-content1 .left-content-item1{
+		margin-top: 40px;
+		float: left;
+		margin-left: 60px;
+	}
+	.header .head-left-content1 .left-content-item1:nth-child(1){
+		margin-left: 260px;
+	}
+	.head-left-content1 .left-content-item1 a{
+		text-decoration: none;
+	}
+	.head-left-content1 .left-content-item1 a img{
+		margin-bottom: 20px;
+	}
+	.head-left-content1 .left-content-item1 a .name{
+		font-size: 13px;
+		color: #333;
+		font-weight: 800;
+	}
+	.head-left-content1 .left-content-item1 a .price{
+		margin-top: 12px;
+		color: #d44d44;
+		font-size: 12px;
+		font-weight: 700;
+	}
+	.head-left-content1 .left-content-item1 a .price span{
+		font-size: 13px;
+		color: #808080;
+
+	}
+	/*手机下拉列表*/
+	/*官方配件下拉列表*/
+	.header .head-left-content2 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 74px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 2;
+	}
+	.header .head-left-content2 .left-content-item2{
+		float: left;
+		margin-left: 100px;
+	}
+	.header .head-left-content2 .left-content-item2 .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.header .head-left-content2 .left-content-item2 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.header .head-left-content2 .left-content-item2 a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*服饰箱包下部分内容*/
+	.header .head-left-content3 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 74px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 2;
+	}
+	.header .head-left-content3 .left-content-item3{
+		float: left;
+		margin-left: 100px;
+	}
+	.header .head-left-content3 .left-content-item3:nth-child(1){
+		margin-left: 300px;
+	}
+	.header .head-left-content3 .left-content-item3 .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.header .head-left-content3 .left-content-item3 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.header .head-left-content3 .left-content-item3 a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*生活电器配件*/
+	.header .head-left-content4 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 74px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 2;
+	}
+	.header .head-left-content4 .left-content-item4{
+		text-align: center;
+	}
+	.header .head-left-content4 .left-content-item4 .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.header .head-left-content4 .left-content-item4 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.header .head-left-content4 .left-content-item4 a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*服务下拉列表*/
+	.header .head-left-content5 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 74px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 2;
+	}
+	.header .head-left-content5 ul{
+		text-align: center;
+	}
+	.header .head-left-content5 ul .content5{
+		margin-top: 30px;
+	}
+	.header .head-left-content5 ul .content5 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 14px;
+		font-weight: 800;
 	}
 /*header部分结束*/
 /*main部分开始*/

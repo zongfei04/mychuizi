@@ -1,7 +1,12 @@
 
 cart();
 reserch();
-shouye()
+shouye();
+phone();
+guanfang();
+dress();
+huxi();
+fuwu();
 //购物车交互功能
 //1获取元素
 	function cart(){
@@ -53,11 +58,11 @@ shouye()
 	 	}
 	}
     
-    //下拉列表的实现
+    //首页下拉列表的实现
     function shouye(){
     	var oOne = document.querySelector('.one');
     	var oHeadLeftContent = document.querySelector('.header .head-left-content')
-    	console.log(oHeadLeftContent);
+    	//console.log(oHeadLeftContent);
 
     	oOne.onmouseenter = function(){
     		oHeadLeftContent.style.display = 'block';
@@ -71,4 +76,108 @@ shouye()
     	oHeadLeftContent.onmouseleave = function(){
     		oHeadLeftContent.style.display = 'none';
     	}
+    }
+    // 手机下拉列表的实现
+    function phone(){
+    	var oTwo = document.querySelector('.two');
+    	var oHeadLeftContent1 = document.querySelector('.header .head-left-content1')
+    	//console.log(oHeadLeftContent1);
+    	//console.log(oTwo);
+
+    	oTwo.onmouseenter = function(){
+    		oHeadLeftContent1.style.display = 'block';
+    	}
+    	oHeadLeftContent1.onmouseenter = function(){
+    		oHeadLeftContent1.style.display = 'block';
+    	}
+    	oTwo.onmouseleave = function(){
+    		oHeadLeftContent1.style.display = 'none';
+    	}
+    	oHeadLeftContent1.onmouseleave = function(){
+    		oHeadLeftContent1.style.display = 'none';
+    	}	
+    }
+
+    // 官方配件下拉列表的实现
+    function guanfang(){
+    	var oThree = document.querySelector('.three');
+    	var oHeadLeftContent2 = document.querySelector('.header .head-left-content2')
+    	// console.log(oHeadLeftContent2);
+    	// console.log(oThree);
+    	
+    	oThree.onmouseenter = function(){
+    		oHeadLeftContent2.style.display = 'block';
+    	}
+    	oHeadLeftContent2.onmouseenter = function(){
+    		oHeadLeftContent2.style.display = 'block';
+    	}
+    	oThree.onmouseleave = function(){
+    		oHeadLeftContent2.style.display = 'none';
+    	}
+    	oHeadLeftContent2.onmouseleave = function(){
+    		oHeadLeftContent2.style.display = 'none';
+    	} 		
+    }
+
+    //服饰箱包下拉列表的实现
+    function dress(){
+    	var oFour = document.querySelector('.four');
+    	var oHeadLeftContent3 = document.querySelector('.header .head-left-content3')
+    	console.log(oHeadLeftContent3);
+    	console.log(oFour);
+    	
+    	oFour.onmouseenter = function(){
+    		oHeadLeftContent3.style.display = 'block';
+    	}
+    	oHeadLeftContent3.onmouseenter = function(){
+    		oHeadLeftContent3.style.display = 'block';
+    	}
+    	oFour.onmouseleave = function(){
+    		oHeadLeftContent3.style.display = 'none';
+    	}
+    	oHeadLeftContent3.onmouseleave = function(){
+    		oHeadLeftContent3.style.display = 'none';
+    	} 		
+    }
+    //畅呼吸下拉列表的实现
+    function huxi(){
+    	var oFive = document.querySelector('.five');
+    	var oHeadLeftContent4 = document.querySelector('.header .head-left-content4')
+    	console.log(oHeadLeftContent4);
+    	console.log(oFive);
+    	
+    	oFive.onmouseenter = function(){
+    		oHeadLeftContent4.style.display = 'block';
+    	}
+    	oHeadLeftContent4.onmouseenter = function(){
+    		oHeadLeftContent4.style.display = 'block';
+    	}
+    	oFive.onmouseleave = function(){
+    		oHeadLeftContent4.style.display = 'none';
+    	}
+    	oHeadLeftContent4.onmouseleave = function(){
+    		oHeadLeftContent4.style.display = 'none';
+    	} 	
+    }
+
+    // 服务下拉列表的实现
+    function fuwu(){
+    	
+    	var oSix = document.querySelector('.six');
+    	var oHeadLeftContent5 = document.querySelector('.header .head-left-content5')
+    	console.log(oHeadLeftContent5);
+    	console.log(oSix);
+    	
+    	oSix.onmouseenter = function(){
+    		oHeadLeftContent5.style.display = 'block';
+    	}
+    	oHeadLeftContent5.onmouseenter = function(){
+    		oHeadLeftContent5.style.display = 'block';
+    	}
+    	oSix.onmouseleave = function(){
+    		oHeadLeftContent5.style.display = 'none';
+    	}
+    	oHeadLeftContent5.onmouseleave = function(){
+    		oHeadLeftContent5.style.display = 'none';
+    	} 	
     }
