@@ -1,7 +1,7 @@
 
 cart();
 reserch();
-// reserch()
+shouye()
 //购物车交互功能
 //1获取元素
 	function cart(){
@@ -33,22 +33,42 @@ reserch();
 	}
 
 
-//搜索框点击事件
- function reserch(){
- 	var oTxt = document.getElementById('txt');
- 	var oSearchList = document.querySelector('.header .head-right .search-list')
- 	var oReachRight = document.querySelector('.head-right .reach-right');
- 	
+	//搜索框点击事件
+	function reserch(){
+	 	var oTxt = document.getElementById('txt');
+	 	var oSearchList = document.querySelector('.header .head-right .search-list')
+	 	var oReachRight = document.querySelector('.head-right .reach-right');
+	 	
 
- 	oTxt.onfocus = function(){
- 		oSearchList.style.display = 'block';
- 		oReachRight.style.display = 'none';
- 		oTxt.placeholder="请输入您搜索的商品";
+	 	oTxt.onfocus = function(){
+	 		oSearchList.style.display = 'block';
+	 		oReachRight.style.display = 'none';
+	 		oTxt.placeholder="请输入您搜索的商品";
 
- 	}
- 	oTxt.onblur = function(){
- 		oSearchList.style.display = 'none';
- 		oReachRight.style.display = 'block';
- 		oTxt.placeholder="";
- 	}
- }
+	 	}
+	 	oTxt.onblur = function(){
+	 		oSearchList.style.display = 'none';
+	 		oReachRight.style.display = 'block';
+	 		oTxt.placeholder="";
+	 	}
+	}
+    
+    //下拉列表的实现
+    function shouye(){
+    	var oOne = document.querySelector('.one');
+    	var oHeadLeftContent = document.querySelector('.header .head-left-content')
+    	console.log(oHeadLeftContent);
+
+    	oOne.onmouseenter = function(){
+    		oHeadLeftContent.style.display = 'block';
+    	}
+    	oHeadLeftContent.onmouseenter = function(){
+    		oHeadLeftContent.style.display = 'block';
+    	}
+    	oOne.onmouseleave = function(){
+    		oHeadLeftContent.style.display = 'none';
+    	}
+    	oHeadLeftContent.onmouseleave = function(){
+    		oHeadLeftContent.style.display = 'none';
+    	}
+    }

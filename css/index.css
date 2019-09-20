@@ -203,16 +203,35 @@
 /*header部分开始*/
 	.header{
 		height: 74px;
+		position: relative;
 	}
 	/*header左侧部分*/
 	.header .contanier .head-left li{
 		float: left;
 	}
 	.header .head-left li{
-		margin-left: 30px;
+		/*margin-left: 30px;*/
+
 	}
 	.header .head-left li:first-child{
 		margin-left: 0px;
+		font-weight: 800;
+		width: 60px;
+	}
+	.header .head-left li:nth-child(2){
+		width: 60px;
+	}
+	.header .head-left li:nth-child(3){
+		width: 86px;
+	}
+	.header .head-left li:nth-child(4){
+		width: 86px;
+	}
+	.header .head-left li:nth-child(5){
+		width: 72px;
+	}
+	.header .head-left li:nth-child(6){
+		width: 60px;
 	}
 	.header .head-left li a:hover{
 		color:#5079d9;
@@ -309,6 +328,41 @@
 		text-decoration: none;
 		font-size: 13px;
 		color:#666;
+	}
+	/*首页下拉列表*/
+	.header .head-left-content {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 74px;
+		position: absolute;
+		height: 308px;
+		border-top: 1px solid #ccc;
+		z-index: 2;
+	}	
+	.header .head-left-content .left-content-item{
+		float: left;
+		margin-left: 100px;
+	}
+	.header .head-left-content .left-content-item:nth-child(3){
+		margin-left: 290px;
+	}
+	.header .head-left-content .left-content-item .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+
+
+	}
+	.header .head-left-content .left-content-item a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.header .head-left-content .left-content-item a span{
+		vertical-align: 13px;
+		margin-left: 18px;
 	}
 /*header部分结束*/
 /*main部分开始*/
