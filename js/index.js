@@ -7,6 +7,9 @@ guanfang();
 dress();
 huxi();
 fuwu();
+handleCart();
+// handleShadow();
+// handleFlash();
 //购物车交互功能
 //1获取元素
 	function cart(){
@@ -181,3 +184,30 @@ fuwu();
     		oHeadLeftContent5.style.display = 'none';
     	} 	
     }
+
+    // 轮播图的实现
+    function handleCart(){
+        new Carousel({
+        id:'carsouel',
+        aImg:['images/carsouel.png','images/carsouel1.png','images/carsouel2.png'],
+        width:1226,
+        height:498,
+        autoPlayTime:1000
+        })
+    }
+
+    //处理滑动部分
+    /*
+    function handleFlash(){
+        var oSpan = document.querySelectorAll('.shopping .more span');
+        var oFlasBox = document.querySelector('.shopping .cart1');
+        var oProduct = document.querySelector('.shopping .cart1 .hd-list');
+       oSpan[0].onclick = function(){
+            oProduct.style.marginLeft = '0px';
+       }
+        oSpan[1].onclick = function(){
+            oProduct.style.marginLeft = '1226px';
+       }
+    }
+    */
+
