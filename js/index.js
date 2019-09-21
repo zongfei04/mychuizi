@@ -8,6 +8,7 @@ dress();
 huxi();
 fuwu();
 handleCart();
+mouth()
 // handleShadow();
 // handleFlash();
 //购物车交互功能
@@ -126,8 +127,6 @@ handleCart();
     function dress(){
     	var oFour = document.querySelector('.four');
     	var oHeadLeftContent3 = document.querySelector('.header .head-left-content3')
-    	console.log(oHeadLeftContent3);
-    	console.log(oFour);
     	
     	oFour.onmouseenter = function(){
     		oHeadLeftContent3.style.display = 'block';
@@ -146,8 +145,8 @@ handleCart();
     function huxi(){
     	var oFive = document.querySelector('.five');
     	var oHeadLeftContent4 = document.querySelector('.header .head-left-content4')
-    	console.log(oHeadLeftContent4);
-    	console.log(oFive);
+    	// console.log(oHeadLeftContent4);
+    	// console.log(oFive);
     	
     	oFive.onmouseenter = function(){
     		oHeadLeftContent4.style.display = 'block';
@@ -168,8 +167,8 @@ handleCart();
     	
     	var oSix = document.querySelector('.six');
     	var oHeadLeftContent5 = document.querySelector('.header .head-left-content5')
-    	console.log(oHeadLeftContent5);
-    	console.log(oSix);
+    	// console.log(oHeadLeftContent5);
+    	// console.log(oSix);
     	
     	oSix.onmouseenter = function(){
     		oHeadLeftContent5.style.display = 'block';
@@ -210,4 +209,18 @@ handleCart();
        }
     }
     */
+    function mouth(){
+        var oLook = document.querySelector('.look');
+        var oHdItem = document.querySelectorAll('.hd-item');
+        //console.log(oHdItem);
+        for(var i = 0;i<oHdItem.length;i++){        
+            oHdItem[i].onmouseenter = function(){
+                oLook.style.display = 'block';
+                // console.log(this);
+            }
+            oHdItem[i].onmouseleave = function(){
+                oLook.style.display = 'none';
+            }
+        }
+    }
 
