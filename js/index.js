@@ -8,7 +8,7 @@ dress();
 huxi();
 fuwu();
 handleCart();
-mouth()
+// mouth()
 // handleShadow();
 // handleFlash();
 //购物车交互功能
@@ -209,18 +209,23 @@ mouth()
        }
     }
     */
-    function mouth(){
-        var oLook = document.querySelector('.look');
-        var oHdItem = document.querySelectorAll('.hd-item');
-        //console.log(oHdItem);
-        for(var i = 0;i<oHdItem.length;i++){        
-            oHdItem[i].onmouseenter = function(){
-                oLook.style.display = 'block';
-                // console.log(this);
+    /*function mouth(){
+        var aLook = document.querySelectorAll('.look');
+        console.log(aLook);
+        var aHdItem = document.querySelectorAll('.hd-item');
+        for(var i = 0;i<aHdItem.length;i++){       
+            aHdItem[i].onmouseenter = function(){
+                console.log('aaa');
+                 var aHdItem[i].index = i;
+                for(var j = 0;j<aHdItem.length;j++){
+                    aLook[j].style.display = 'none';
+                }
+                aLook[].style.display = 'block';
             }
-            oHdItem[i].onmouseleave = function(){
-                oLook.style.display = 'none';
+            aHdItem[i].onmouseleave = function(){
+                aLook[].style.display = 'none';
             }
         }
     }
+    */
 

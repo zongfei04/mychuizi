@@ -254,7 +254,7 @@
 		border-radius: 5px;
 		border:1px solid #ccc;
 		box-sizing: border-box; 
-		z-index: 2;
+		z-index: 99;
 		text-align: center;
 	}
 	.top-shop .shop-bottom .log{
@@ -409,7 +409,7 @@
 		position: absolute;
 		height: 308px;
 		border-top: 1px solid #ccc;
-		z-index: 2;
+		z-index: 999;
 	}	
 	.header .head-left-content .left-content-item{
 		float: left;
@@ -442,7 +442,7 @@
 		position: absolute;
 		height: 280px;
 		border-top: 1px solid #ccc;
-		z-index: 2;
+		z-index: 999;
 		text-align: center;
 	}
 	.header .head-left-content1 .left-content-item1{
@@ -485,7 +485,7 @@
 		position: absolute;
 		height: 280px;
 		border-top: 1px solid #ccc;
-		z-index: 2;
+		z-index: 999;
 	}
 	.header .head-left-content2 .left-content-item2{
 		float: left;
@@ -516,7 +516,7 @@
 		position: absolute;
 		height: 280px;
 		border-top: 1px solid #ccc;
-		z-index: 2;
+		z-index: 999;
 	}
 	.header .head-left-content3 .left-content-item3{
 		float: left;
@@ -550,7 +550,7 @@
 		position: absolute;
 		height: 280px;
 		border-top: 1px solid #ccc;
-		z-index: 2;
+		z-index: 999;
 	}
 	.header .head-left-content4 .left-content-item4{
 		text-align: center;
@@ -580,7 +580,7 @@
 		position: absolute;
 		height: 280px;
 		border-top: 1px solid #ccc;
-		z-index: 2;
+		z-index: 999;
 	}
 	.header .head-left-content5 ul{
 		text-align: center;
