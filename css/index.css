@@ -1,3 +1,77 @@
+.nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height:0px;
+	width: 100%;
+	overflow: hidden;
+	/*border:1px solid #ccc;*/
+	box-sizing: border-box;
+	background-color: #fff;
+	z-index: 9999;
+}
+.nav .contanier .head-left li{
+		float: left;
+	}
+	.nav .head-left li{
+		/*margin-left: 30px;*/
+
+	}
+	.nav .head-left li:first-child{
+		margin-left: 0px;
+		font-weight: 800;
+		width: 60px;
+	}
+	.nav .head-left li:nth-child(2){
+		width: 60px;
+	}
+	.nav .head-left li:nth-child(3){
+		width: 86px;
+	}
+	.nav .head-left li:nth-child(4){
+		width: 86px;
+	}
+	.nav .head-left li:nth-child(5){
+		width: 72px;
+	}
+	.nav .head-left li:nth-child(6){
+		width: 60px;
+	}
+	.nav .head-left li a:hover{
+		color:#5079d9;
+		transition: all ,0.3s;
+	}
+	.nav .head-left li a{
+		line-height: 74px;
+		color: #4e4d49;
+		font-size: 14px;
+		text-decoration: none;
+	}
+	/*个人中心和购物中心*/
+		/*个人中心*/
+	.nav .top-user a img{
+		display: inline-block;
+		font-size: 16px;
+		float: right;
+		margin-right: 30px;
+		margin-top: 14px;
+		opacity: 1;
+	}
+	.nav .top-user a img:hover{
+		opacity: 0.5;
+	}
+	/*购物中心*/
+	.nav .top-shop a img{
+		float: right;
+		margin-right: 26px;
+		margin-top: 14px;
+		opacity: 1;
+	}
+	.nav .top-shop a img:hover{
+		opacity: 0.7;
+	}
+
+/*查看详情样式处理*/
 .look{
 	display: none;
 	color: #646464;
@@ -12,7 +86,7 @@
 	background-color: #fbfbfb;
 	text-align: center;
 }
-
+/*li元素内阴影处理*/
 .hd-item:hover{
 	box-shadow: 10px 10px 30px 10px rgb(12,23,45,0.1) inset;
 	transition: box-shadow 0.5s;
@@ -61,8 +135,8 @@
 	}
 
 	/*热门下部*/
-	.cart1 .hd-list{
-		width: 2432px;
+	.shopping .cart1 .hd-list{
+		width: 200%;
 	}
 	/*.hd-list .hd-item{
 		float:left;
@@ -280,10 +354,6 @@
 	.header .contanier .head-left li{
 		float: left;
 	}
-	.header .head-left li{
-		/*margin-left: 30px;*/
-
-	}
 	.header .head-left li:first-child{
 		margin-left: 0px;
 		font-weight: 800;
@@ -401,7 +471,7 @@
 		color:#666;
 	}
     /*首页下拉列表*/
-	.header .head-left-content {
+	.head-left-content {
 		display: none;
 		width: 100%;
 		background-color: #fff;
@@ -411,30 +481,30 @@
 		border-top: 1px solid #ccc;
 		z-index: 999;
 	}	
-	.header .head-left-content .left-content-item{
+	.head-left-content .left-content-item{
 		float: left;
 		margin-left: 100px;
 	}
-	.header .head-left-content .left-content-item:nth-child(3){
+	.head-left-content .left-content-item:nth-child(3){
 		margin-left: 290px;
 	}
-	.header .head-left-content .left-content-item .title{
+	.head-left-content .left-content-item .title{
 		color: #808080;
 		font-size: 12px;
 		margin-top: 30px;
 	}
-	.header .head-left-content .left-content-item a{
+	.head-left-content .left-content-item a{
 		text-decoration: none;
 		color: #333;
 		font-size: 13px;
 		font-weight: 800;	
 	}
-	.header .head-left-content .left-content-item a span{
+	.head-left-content .left-content-item a span{
 		vertical-align: 13px;
 		margin-left: 18px;
 	}
 	/*手机下拉列表*/
-	.header .head-left-content1{
+	.head-left-content1{
 		display: none;
 		width: 100%;
 		background-color: #fff;
@@ -445,12 +515,12 @@
 		z-index: 999;
 		text-align: center;
 	}
-	.header .head-left-content1 .left-content-item1{
+	.head-left-content1 .left-content-item1{
 		margin-top: 40px;
 		float: left;
 		margin-left: 60px;
 	}
-	.header .head-left-content1 .left-content-item1:nth-child(1){
+	.head-left-content1 .left-content-item1:nth-child(1){
 		margin-left: 260px;
 	}
 	.head-left-content1 .left-content-item1 a{
@@ -477,7 +547,7 @@
 	}
 	/*手机下拉列表*/
 	/*官方配件下拉列表*/
-	.header .head-left-content2 {
+	.head-left-content2 {
 		display: none;
 		width: 100%;
 		background-color: #fff;
@@ -487,28 +557,28 @@
 		border-top: 1px solid #ccc;
 		z-index: 999;
 	}
-	.header .head-left-content2 .left-content-item2{
+	.head-left-content2 .left-content-item2{
 		float: left;
 		margin-left: 100px;
 	}
-	.header .head-left-content2 .left-content-item2 .title{
+	.head-left-content2 .left-content-item2 .title{
 		color: #808080;
 		font-size: 12px;
 		margin-top: 30px;
 		margin-bottom: 10px;
 	}
-	.header .head-left-content2 .left-content-item2 a{
+	.head-left-content2 .left-content-item2 a{
 		text-decoration: none;
 		color: #333;
 		font-size: 13px;
 		font-weight: 800;	
 	}
-	.header .head-left-content2 .left-content-item2 a span{
+	.head-left-content2 .left-content-item2 a span{
 		vertical-align: 13px;
 		margin-left: 18px;
 	}
 	/*服饰箱包下部分内容*/
-	.header .head-left-content3 {
+	.head-left-content3 {
 		display: none;
 		width: 100%;
 		background-color: #fff;
@@ -518,31 +588,31 @@
 		border-top: 1px solid #ccc;
 		z-index: 999;
 	}
-	.header .head-left-content3 .left-content-item3{
+	.head-left-content3 .left-content-item3{
 		float: left;
 		margin-left: 100px;
 	}
-	.header .head-left-content3 .left-content-item3:nth-child(1){
+	.head-left-content3 .left-content-item3:nth-child(1){
 		margin-left: 300px;
 	}
-	.header .head-left-content3 .left-content-item3 .title{
+	.head-left-content3 .left-content-item3 .title{
 		color: #808080;
 		font-size: 12px;
 		margin-top: 30px;
 		margin-bottom: 10px;
 	}
-	.header .head-left-content3 .left-content-item3 a{
+	.head-left-content3 .left-content-item3 a{
 		text-decoration: none;
 		color: #333;
 		font-size: 13px;
 		font-weight: 800;	
 	}
-	.header .head-left-content3 .left-content-item3 a span{
+	.head-left-content3 .left-content-item3 a span{
 		vertical-align: 13px;
 		margin-left: 18px;
 	}
 	/*生活电器配件*/
-	.header .head-left-content4 {
+	.head-left-content4 {
 		display: none;
 		width: 100%;
 		background-color: #fff;
@@ -552,27 +622,27 @@
 		border-top: 1px solid #ccc;
 		z-index: 999;
 	}
-	.header .head-left-content4 .left-content-item4{
+	.head-left-content4 .left-content-item4{
 		text-align: center;
 	}
-	.header .head-left-content4 .left-content-item4 .title{
+	.head-left-content4 .left-content-item4 .title{
 		color: #808080;
 		font-size: 12px;
 		margin-top: 30px;
 		margin-bottom: 10px;
 	}
-	.header .head-left-content4 .left-content-item4 a{
+	.head-left-content4 .left-content-item4 a{
 		text-decoration: none;
 		color: #333;
 		font-size: 13px;
 		font-weight: 800;	
 	}
-	.header .head-left-content4 .left-content-item4 a span{
+	.head-left-content4 .left-content-item4 a span{
 		vertical-align: 13px;
 		margin-left: 18px;
 	}
 	/*服务下拉列表*/
-	.header .head-left-content5 {
+	.head-left-content5 {
 		display: none;
 		width: 100%;
 		background-color: #fff;
@@ -582,13 +652,13 @@
 		border-top: 1px solid #ccc;
 		z-index: 999;
 	}
-	.header .head-left-content5 ul{
+	.head-left-content5 ul{
 		text-align: center;
 	}
-	.header .head-left-content5 ul .content5{
+	.head-left-content5 ul .content5{
 		margin-top: 30px;
 	}
-	.header .head-left-content5 ul .content5 a{
+	.head-left-content5 ul .content5 a{
 		text-decoration: none;
 		color: #333;
 		font-size: 14px;

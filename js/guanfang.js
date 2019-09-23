@@ -1,21 +1,16 @@
 
+
 cart();
 reserch();
+fix();
 shouye1();
-shouye2();
 phone();
 guanfang();
 dress();
 huxi();
 fuwu();
-handleCart();
-mouth();
-fix();
-// handleShadow();
-// handleFlash();
-//购物车交互功能
-//1获取元素
-	function cart(){
+// 购物中心
+function cart(){
 		var oTopShop = document.querySelector('.top .top-shop');
 		var oShopBottom = document.querySelector('.top .top-shop .shop-bottom');
 		var hideTime = 0;
@@ -41,33 +36,53 @@ fix();
 				})
 			},500)
 		}
-	}
-	//搜索框点击事件
-	function reserch(){
-	 	var oTxt = document.getElementById('txt');
-	 	var oSearchList = document.querySelector('.header .head-right .search-list')
-	 	var oReachRight = document.querySelector('.head-right .reach-right');
-	 	
+}
+// 搜索框内容固定
+function reserch(){
+ 	var oTxt = document.getElementById('txt');
+ 	var oSearchList = document.querySelector('.header .head-right .search-list')
+ 	var oReachRight = document.querySelector('.head-right .reach-right');
 
-	 	oTxt.onfocus = function(){
-	 		oSearchList.style.display = 'block';
-	 		oReachRight.style.display = 'none';
-	 		oTxt.placeholder="请输入您搜索的商品";
+ 	oTxt.onfocus = function(){
+ 		oSearchList.style.display = 'block';
+ 		oReachRight.style.display = 'none';
+ 		oTxt.placeholder="请输入您搜索的商品";
 
-	 	}
-	 	oTxt.onblur = function(){
-	 		oSearchList.style.display = 'none';
-	 		oReachRight.style.display = 'block';
-	 		oTxt.placeholder="";
-	 	}
-	} 
-    //首页下拉列表的实现
+ 	 }
+ 	oTxt.onblur = function(){
+ 		oSearchList.style.display = 'none';
+ 		oReachRight.style.display = 'block';
+ 		oTxt.placeholder="";
+ 	}
+}
+// 顶部固定
+function fix(){
+    var oNav = document.getElementById('nav');
+    var isShow = false;       
+    window.onscroll = function(){
+        if(getScrollTop() >= 45){
+            if(!isShow){
+               animate(oNav,'height',74);
+               isShow = true; 
+            } 
+        }
+        else{
+            if(isShow){
+                animate(oNav,'height',0)
+                isShow = false;
+            }   
+        } 
+    }    
+}
+
+
+//首页下拉列表的实现
     function shouye1(){
     	var oOne = document.querySelector('.one');
     	var oHeadLeftContent = document.querySelector('.header .head-left-content')
-    	//console.log(oHeadLeftContent);
 
     	oOne.onmouseenter = function(){
+    		
     		oHeadLeftContent.style.display = 'block';
     	}
     	oHeadLeftContent.onmouseenter = function(){
@@ -197,67 +212,3 @@ fix();
     		oHeadLeftContent5.style.display = 'none';
     	} 	
     }
-    // 轮播图的实现
-    function handleCart(){
-        new Carousel({
-        id:'carsouel',
-        aImg:['images/carsouel.png','images/carsouel1.png','images/carsouel2.png'],
-        width:1226,
-        height:498,
-        autoPlayTime:1000
-        })
-    }
-    //处理滑动部分
-    /*
-    function handleFlash(){
-        var oSpan = document.querySelectorAll('.shopping .more span');
-        var oFlasBox = document.querySelector('.shopping .cart1');
-        var oProduct = document.querySelector('.shopping .cart1 .hd-list');
-       oSpan[0].onclick = function(){
-            oProduct.style.marginLeft = '0px';
-       }
-        oSpan[1].onclick = function(){
-            oProduct.style.marginLeft = '1226px';
-       }
-    }
-    */
-    
-    // 查看详情处理
-    function mouth(){
-        var aLook = document.querySelectorAll('.look');
-        var aHdItem = document.querySelectorAll('.hd-item');
-        for(var i = 0;i<aHdItem.length;i++){ 
-            aHdItem[i].index = i;      
-            aHdItem[i].onmouseenter = function(){ 
-                for(var j = 0;j<aHdItem.length;j++){
-                    aLook[j].style.display = 'none';
-                }
-               aLook[this.index].style.display = 'block';
-            }
-            aHdItem[i].onmouseleave = function(){
-                aLook[this.index].style.display = 'none';
-            }
-        }
-    }
-
-    // 顶部固定
-    function fix(){
-        var oNav = document.getElementById('nav');
-        var isShow = false;       
-        window.onscroll = function(){
-            if(getScrollTop() >= 45){
-                if(!isShow){
-                   animate(oNav,'height',74);
-                   isShow = true; 
-                } 
-            }
-            else{
-                if(isShow){
-                    animate(oNav,'height',0)
-                    isShow = false;
-                }   
-            } 
-        }    
-    }
-    
-

@@ -1,4 +1,81 @@
+.nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height:0px;
+	width: 100%;
+	overflow: hidden;
+	/*border:1px solid #ccc;*/
+	box-sizing: border-box;
+	background-color: #fff;
+	z-index: 9999;
+}
+.nav .contanier .head-left li{
+		float: left;
+	}
+	.nav .head-left li{
+		/*margin-left: 30px;*/
 
+	}
+	.nav .head-left li:first-child{
+		margin-left: 0px;
+		font-weight: 800;
+		width: 60px;
+	}
+	.nav .head-left li:nth-child(2){
+		width: 60px;
+	}
+	.nav .head-left li:nth-child(3){
+		width: 86px;
+	}
+	.nav .head-left li:nth-child(4){
+		width: 86px;
+	}
+	.nav .head-left li:nth-child(5){
+		width: 72px;
+	}
+	.nav .head-left li:nth-child(6){
+		width: 60px;
+	}
+	.nav .head-left li a:hover{
+		color:#5079d9;
+		transition: all ,0.3s;
+	}
+	.nav .head-left li a{
+		line-height: 74px;
+		color: #4e4d49;
+		font-size: 14px;
+		text-decoration: none;
+	}
+	/*个人中心和购物中心*/
+		/*个人中心*/
+	.nav .top-user a img{
+		display: inline-block;
+		font-size: 16px;
+		float: right;
+		margin-right: 30px;
+		margin-top: 14px;
+		opacity: 1;
+	}
+	.nav .top-user a img:hover{
+		opacity: 0.5;
+	}
+	/*购物中心*/
+	.nav .top-shop a img{
+		float: right;
+		margin-right: 26px;
+		margin-top: 14px;
+		opacity: 1;
+	}
+	.nav .top-shop a img:hover{
+		opacity: 0.7;
+	}
+
+/*li元素内阴影处理*/
+.content-item:hover{
+	box-shadow: 10px 10px 30px 10px rgb(12,23,45,0.1) inset;
+	transition: box-shadow 0.5s;
+}
 /*top部分开始*/
 	.top{
 		height: 45px;
@@ -58,6 +135,35 @@
 	.top .top-shop a img:hover{
 		opacity: 0.7;
 	}
+	/*购物中心下部*/
+	/*购物中心下部*/
+	.top-shop .shop-bottom{
+		display: none;
+		position: absolute;
+		top: 47px;
+		right: 26px;
+		width: 360px;
+		height: 315px;
+		background-color: #fff;
+		border-radius: 5px;
+		border:1px solid #ccc;
+		box-sizing: border-box; 
+		z-index: 99;
+		text-align: center;
+	}
+	.top-shop .shop-bottom .log{
+		margin-top: 90px;
+	}
+	.top-shop .shop-bottom .name{
+		margin-top: 25px;
+		font-size: 18px;
+		color:#333;
+	}
+	.top-shop .shop-bottom .desc{
+		color: #bcbcbc;
+		font-size: 12px;
+		margin-top: 8px;
+	}
 /*top部分结束*/
 /*header部分开始*/
 	.header{
@@ -68,10 +174,27 @@
 		float: left;
 	}
 	.header .head-left li{
-		margin-left: 30px;
+		/*margin-left: 30px;*/
 	}
 	.header .head-left li:first-child{
 		margin-left: 0px;
+		font-weight: 800;
+		width: 60px;
+	}
+	.header .head-left li:nth-child(2){
+		width: 60px;
+	}
+	.header .head-left li:nth-child(3){
+		width: 86px;
+	}
+	.header .head-left li:nth-child(4){
+		width: 86px;
+	}
+	.header .head-left li:nth-child(5){
+		width: 72px;
+	}
+	.header .head-left li:nth-child(6){
+		width: 60px;
 	}
 	.header .head-left li a:hover{
 		color:#5079d9;
@@ -146,11 +269,223 @@
 		font-weight: bold;
 	}
 	/*搜索内容定位*/
-	/*.head-reach .search-list{
+	.header .head-right .search-list{
+		display: none;
 		position: absolute;
-		top:36px;
-		left:0px;
-	}*/
+		width: 310px;
+		height: 210px;
+		background-color: #fff;
+		border:1px solid #ccc;
+		z-index: 999;
+		margin-left: 10px;
+		margin-top: 15px;
+		border-radius: 5px;
+		box-sizing: border-box;
+
+	}
+	.header .head-right .search-list li{
+		margin-top: 18px;
+		margin-left: 15px;
+	}
+	.header .head-right .search-list a{
+		text-decoration: none;
+		font-size: 13px;
+		color:#666;
+	}
+	 /*首页下拉列表*/
+	.head-left-content {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 120px;
+		position: absolute;
+		height: 308px;
+		border-top: 1px solid #ccc;
+		z-index: 999;
+	}	
+	.head-left-content .left-content-item{
+		float: left;
+		margin-left: 100px;
+	}
+	.head-left-content .left-content-item:nth-child(3){
+		margin-left: 290px;
+	}
+	.head-left-content .left-content-item .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+	}
+	.head-left-content .left-content-item a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.head-left-content .left-content-item a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*手机下拉列表*/
+	.header .head-left-content1{
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 120px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 999;
+		text-align: center;
+	}
+	.head-left-content1 .left-content-item1{
+		margin-top: 40px;
+		float: left;
+		margin-left: 60px;
+	}
+	.head-left-content1 .left-content-item1:nth-child(1){
+		margin-left: 260px;
+	}
+	.head-left-content1 .left-content-item1 a{
+		text-decoration: none;
+	}
+	.head-left-content1 .left-content-item1 a img{
+		margin-bottom: 20px;
+	}
+	.head-left-content1 .left-content-item1 a .name{
+		font-size: 13px;
+		color: #333;
+		font-weight: 800;
+	}
+	.head-left-content1 .left-content-item1 a .price{
+		margin-top: 12px;
+		color: #d44d44;
+		font-size: 12px;
+		font-weight: 700;
+	}
+	.head-left-content1 .left-content-item1 a .price span{
+		font-size: 13px;
+		color: #808080;
+
+	}
+	/*手机下拉列表*/
+	/*官方配件下拉列表*/
+	.header .head-left-content2 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 120px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 999;
+	}
+	.head-left-content2 .left-content-item2{
+		float: left;
+		margin-left: 100px;
+	}
+	.head-left-content2 .left-content-item2 .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.head-left-content2 .left-content-item2 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.head-left-content2 .left-content-item2 a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*服饰箱包下部分内容*/
+	.head-left-content3 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 120px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 999;
+	}
+	.head-left-content3 .left-content-item3{
+		float: left;
+		margin-left: 100px;
+	}
+	.head-left-content3 .left-content-item3:nth-child(1){
+		margin-left: 300px;
+	}
+	.head-left-content3 .left-content-item3 .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.head-left-content3 .left-content-item3 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.head-left-content3 .left-content-item3 a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*生活电器配件*/
+	.head-left-content4 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 120px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 999;
+	}
+	.head-left-content4 .left-content-item4{
+		text-align: center;
+	}
+	.head-left-content4 .left-content-item4 .title{
+		color: #808080;
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.head-left-content4 .left-content-item4 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 13px;
+		font-weight: 800;	
+	}
+	.head-left-content4 .left-content-item4 a span{
+		vertical-align: 13px;
+		margin-left: 18px;
+	}
+	/*服务下拉列表*/
+	.head-left-content5 {
+		display: none;
+		width: 100%;
+		background-color: #fff;
+		top: 120px;
+		position: absolute;
+		height: 280px;
+		border-top: 1px solid #ccc;
+		z-index: 999;
+	}
+	.head-left-content5 ul{
+		text-align: center;
+	}
+	.head-left-content5 ul .content5{
+		margin-top: 30px;
+	}
+	.head-left-content5 ul .content5 a{
+		text-decoration: none;
+		color: #333;
+		font-size: 14px;
+		font-weight: 800;
+	}
 /*header部分结束*/
 /*main部分开始*/
 .main{
@@ -319,4 +654,4 @@
 		font-weight: 700;
 		color: #5070d9;
 	}
-/*header部分结束*/
+/*header部分结束
