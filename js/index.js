@@ -11,8 +11,7 @@ fuwu();
 handleCart();
 mouth();
 fix();
-// handleShadow();
-// handleFlash();
+handleFlash();
 //购物车交互功能
 //1获取元素
 	function cart(){
@@ -208,7 +207,7 @@ fix();
         })
     }
     //处理滑动部分
-    /*
+    
     function handleFlash(){
         var oSpan = document.querySelectorAll('.shopping .more span');
         var oFlasBox = document.querySelector('.shopping .cart1');
@@ -217,10 +216,10 @@ fix();
             oProduct.style.marginLeft = '0px';
        }
         oSpan[1].onclick = function(){
-            oProduct.style.marginLeft = '1226px';
+            oProduct.style.marginLeft = '-1216px';
        }
     }
-    */
+    
     
     // 查看详情处理
     function mouth(){
