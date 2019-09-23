@@ -73,7 +73,7 @@
 
 /*li元素内阴影处理*/
 .content-item:hover{
-	box-shadow: 10px 10px 30px 10px rgb(12,23,45,0.1) inset;
+	box-shadow: 10px 10px 20px 10px rgb(12,32,64,0.1) inset;
 	transition: box-shadow 0.5s;
 }
 /*top部分开始*/
